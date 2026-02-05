@@ -1,0 +1,17 @@
+meta {
+  name: Update Users
+  type: http
+  seq: 1
+}
+
+patch {
+  url: http://localhost:3000/auth/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "edit@mail.com"
+  }
+}

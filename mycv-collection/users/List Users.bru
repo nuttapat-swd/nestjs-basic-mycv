@@ -1,0 +1,15 @@
+meta {
+  name: List Users
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/auth
+  body: none
+  auth: none
+}
+
+params:query {
+  ~email: test@mail.com
+}
